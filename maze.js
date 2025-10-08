@@ -4,7 +4,7 @@ var step = 20
 function setup() {
   createCanvas(size, size);
   
-  for(var x = 0; x < size; x++) {
+  for(var x = 0; x < size; x += step) {
     drawLine(x, 0 , step, step)
   }
   
