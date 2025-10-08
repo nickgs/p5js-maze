@@ -5,9 +5,10 @@ function setup() {
   createCanvas(size, size);
   
   for(var x = 0; x < size; x += step) {
-    drawLine(x, 0 , step, step)
+    for(var y = 0; y < size; y += step) {
+      drawLine(x, y, step, step)
+    }
   }
-  
 }
 
 function drawLine(x, y, w, h) {
