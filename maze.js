@@ -1,9 +1,13 @@
 var size = 400
+var step = 20
 
 function setup() {
   createCanvas(size, size);
   
-  drawLine(0, 0 , size, size)
+  for(var x = 0; x < size; x++) {
+    drawLine(x, 0 , step, step)
+  }
+  
 }
 
 function drawLine(x, y, w, h) {
