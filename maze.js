@@ -7,5 +7,12 @@ function setup() {
 }
 
 function drawLine(x, y, w, h) {
-  line(x, y, x + w, y + h) 
+  var leftToRight = random(1) >= 0.5 // Make this true or false. 
+  
+  if(leftToRight) {
+    line(x, y, x + w, y + h)
+  }
+  else {
+    line(x + w, y, x, y + h)
+  }
 }
